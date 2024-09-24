@@ -6,7 +6,7 @@ sns.set()
 
 
 st.title('California Housing Data(1990)')
-df = pd.read_csv('Housing.csv')
+df = pd.read_csv('housing.csv')
 
 # note that you have to use 0 and 500001 given that the data type of price is float
 price_filter = st.slider('Minimal Median House Price:', 0, 500001, 200000)  # min, max, default
